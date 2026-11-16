@@ -16,10 +16,10 @@ jobs:
       # Installe Node. Même version que sur votre poste : 22.
       - uses: actions/setup-node@v7
         with:
-          node-version: ___
+          node-version: 22
 
       # Installation reproductible, d'après package-lock.json.
-      - run: ___
+      - run: npm ci
 
       # Les tests. Si cette commande échoue, le pipeline devient rouge.
-      - run: ___
+      - run: npm test
